@@ -1,0 +1,52 @@
+@import "mixin";
+@import "var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+ @include flexprob;
+  background: $bg-color;
+
+  h1 {
+    color: red;
+    font-size: 5rem + 5rem;
+    letter-spacing: 0.3rem;
+    &:hover {
+      color: pink;
+    }
+    &::after{
+        content: " Channel";
+    }
+  }
+  p {
+    color: red;
+    font-size: 5rem + 5rem;
+    letter-spacing: 0.3rem;
+    &:hover {
+      color: aqua;
+    }
+  }
+}
+// h1{
+//     color: red;
+//     font-size: 5rem + 5rem;
+// }
+// p{ color: red;
+//     font-size: 5rem + 5rem;}
+
+
+// 1. Operators
+// 2. Variables
+// 3. Nesting
+// 4. Mixin
+// 5. Parameters
+// 6. Partials

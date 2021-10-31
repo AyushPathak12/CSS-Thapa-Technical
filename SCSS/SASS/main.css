@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #452aa7;
+}
+
+.main_header h1 {
+  color: red;
+  font-size: 10rem;
+  letter-spacing: 0.3rem;
+}
+
+.main_header h1:hover {
+  color: pink;
+}
+
+.main_header h1::after {
+  content: " Channel";
+}
+
+.main_header p {
+  color: red;
+  font-size: 10rem;
+  letter-spacing: 0.3rem;
+}
+
+.main_header p:hover {
+  color: aqua;
+}
+/*# sourceMappingURL=main.css.map */
