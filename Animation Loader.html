@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Loader</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #16a085; */
+            background: #fff;
+        }
+
+        .center_div {
+            width: 50vw;
+            height: calc(100vh - 50vh);
+            /* background-color: #34495e; */
+            background: #fff;
+            display: grid;
+            place-items: center;
+        }
+        .loader{
+            width: 15rem;
+            height: 15rem;
+            background-color: transparent;
+            border: 1.5rem solid yellowgreen;
+            border-top: 1.5rem solid red;
+            border-radius: 50%;
+            animation: loaders 2s linear infinite;
+        }
+        @keyframes loaders {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <span class="loader">
+
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

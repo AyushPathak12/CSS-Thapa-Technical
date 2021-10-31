@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to vertically center thr text</title>
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}  
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #227093;
+            display: grid;
+            place-items: center;
+
+        }
+        .main_div{
+            width: 40vw;
+            height: 70vh;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            /* position: relative; */
+
+            /* display: table; */
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+
+            display: grid;
+            place-items: center;
+        }
+        .main_div h1{
+            /* position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%); */
+
+
+            /* display: table-cell;
+            vertical-align: middle;
+            text-align: center; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div"><h1>Ayush center</h1>
+    <!-- <p>Subscribe</p> -->
+</div>
+</body>
+</html>

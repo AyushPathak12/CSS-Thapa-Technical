@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        :root {
+            --b-a-width: 10vw;
+            --b-a-md-width: 15vw;
+            --b-a-sm-width: 20vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            background: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+        }
+
+        h1::before {
+            content: "";
+            /* display: block; */
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c3e50;
+        }
+
+        h1::after {
+            content: "";
+            /* display: block; */
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c3e50;
+        }
+
+        @media(max-width: 768px) {
+            h1::before {
+
+                width: var(--b-a-sm-width);
+
+            }
+
+            h1::after {
+
+                width: var(--b-a-sm-width);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <h1>Ayush Pathak</h1>
+    </div>
+</body>
+
+</html>

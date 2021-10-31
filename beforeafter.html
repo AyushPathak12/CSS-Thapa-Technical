@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Pathak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        :root {
+            --width: 100vw;
+        }
+
+        .main_div {
+            width: var(--width);
+            height: 100vh;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2980b9;
+            font-size: 5rem;
+        }
+
+        h1::after {
+
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00";
+            width: calc(var(--width) - 80vw);
+            height: 25px;
+            color: #1abc9c;
+            font-size: 3rem;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 5px solid #3498db;
+        }
+
+/* For tablets */
+        @media(max-width: 998px) {
+            h1 {
+
+                font-size: 4rem;
+            }
+
+            h1::after {
+                width: calc(var(--width) - 70vw);
+
+            }
+        }
+        /* For Mobiles */
+        @media(max-width: 768px) {
+            h1 {
+
+                font-size: 2.5rem;
+            }
+
+            h1::after {
+                font-size: 2rem;
+                height: 16px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <h1>Ayush Pathak</h1>
+    </div>
+</body>
+
+</html>

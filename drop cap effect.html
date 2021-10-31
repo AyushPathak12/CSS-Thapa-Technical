@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Cap Effect</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: violet;
+        }
+
+        .center_div {
+            background-color: violet;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 30px;
+            font-weight: lighter;
+        }
+
+        p.first-child::first-letter {
+            color: yellow;
+            font-size: 8rem;
+            float: left;
+            display: block;
+            margin: 0 15px 0 0;
+            line-height: 0.5;
+            font-weight: bold;
+        }
+
+        p.first-child::first-line {
+            color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <p class="first-child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere similique ipsam voluptate
+                placeat totam, aliquam inventore. Voluptate quidem architecto mollitia necessitatibus nulla et libero,
+                molestias laborum omnis laboriosam velit optio? Similique consectetur mollitia ad animi cupiditate
+                molestiae exercitationem vel veritatis, odio a atque, consequuntur id sequi dolore numquam Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Aperiam cum expedita voluptatibus asperiores dolorem ad
+                neque ex atque, iure aliquid, commodi eligendi amet dolorum laborum odit temporibus corrupti sint libero
+                aut alias quam magnam aliquam molestias. Maxime at dolorum dicta dolore cum voluptatibus quod sequi,
+                reiciendis, non error ipsa pariatur.
+            </p>
+            <br />
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perferendis esse nisi soluta sequi
+                vitae hic, corporis similique magni at. Aspernatur, molestiae explicabo nobis fuga, odit laborum hic
+                vero sunt ut eos, rerum consequuntur sit doloremque beatae saepe. Quia nihil debitis sed? Perspiciatis
+                laborum eius, esse maiores, error alias ipsa vitae cumque, incidunt facilis numquam quo repudiandae
+                reprehenderit sit nobis voluptatem laudantium quasi fugit suscipit autem quod earum ea! Omnis aliquam in
+                sunt fugiat quaerat alias animi veniam, aliquid soluta aut laboriosam sed, hic atque, labore aperiam
+                impedit officia cumque accusantium quibusdam nostrum eos autem optio ipsam? Dicta, eum laudantium.
+            </p>
+            <br />
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perferendis esse nisi soluta sequi
+                vitae hic, corporis similique magni at. Aspernatur, molestiae explicabo nobis fuga, odit laborum hic
+                vero sunt ut eos, rerum consequuntur sit doloremque beatae saepe. Quia nihil debitis sed? Perspiciatis
+                laborum eius, esse maiores, error alias ipsa vitae cumque, incidunt facilis numquam quo repudiandae
+                reprehenderit sit nobis voluptatem laudantium quasi fugit suscipit autem quod earum ea! Omnis aliquam in
+                sunt fugiat quaerat alias animi veniam, aliquid soluta aut laboriosam sed, hic atque, labore aperiam
+                impedit officia cumque accusantium quibusdam nostrum eos autem optio ipsam? Dicta, eum laudantium.
+            </p>
+            <br />
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_header {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+
+        h1 {
+            font-size: 7rem;
+            /* color: white; */
+            color: transparent;
+            background-image: url('img/urban.jpg');
+            background-size: 100% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_header">
+        <h1>Ayush Pathak</h1>
+    </div>
+</body>
+
+</html>

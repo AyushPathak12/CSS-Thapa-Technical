@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Search Button Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #273c75;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        .search_box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchText {
+            width: 0rem;
+            /* padding: 2rem; */
+            border-radius: 5rem;
+            border: none;
+            outline: none;
+            transition: all 0.2s linear;
+        }
+
+        .searchText:focus {
+            outline: none;
+        }
+
+        .searchBtn {
+            width: 5rem;
+            height: 5rem;
+            background-color: #192a56;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            right: 1rem;
+            display: grid;
+            place-items: center;
+        }
+
+        .search_box:hover>.searchText {
+            width: 25rem;
+            padding: 2rem;
+            box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+        }
+
+        .search_box:hover>.searchBtn {
+            background: #fff;
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search_box">
+        <input type="text" class="searchText" placeholder="Type to Search..">
+        <a href="https://google.com" class="searchBtn">
+            <i class="fas fa-search fa-3x"></i>
+        </a>
+    </div>
+</body>
+
+</html>

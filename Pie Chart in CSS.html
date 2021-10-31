@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center_div {
+            width: calc(100vw - 40vw);
+            height: calc(100vh - 30vh);
+            position: relative;
+            border: 1px solid black;
+            position: relative;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+
+        }
+
+        .pie-chart {
+            background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
+                conic-gradient(from 180deg,
+                    orangered 0,
+                    orangered 35%,
+                    yellow 0,
+                    yellow 60%,
+                    hotpink 0,
+                    hotpink 75%,
+                    blue 0,
+                    blue 89%,
+                    green 0,
+                    green 100%
+                );
+            min-width: 300px;
+            min-height: 300px;
+        }
+
+
+        .center_div h1 {
+            padding: 20px 0 20px 20px;
+        }
+
+        .center_div p {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+
+        .center_div span::after {
+            content: "";
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            font-weight: 700;
+            background: currentColor;      
+            margin: 0 0.5rem;
+        }
+
+        .center_div h3 {
+            position: absolute;
+            bottom: 0;
+            padding: 1rem;
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <h1>
+                India top 5 states with highest corona cases
+            </h1>
+            <div class="pie-chart">
+                <p>
+                    Maharashtra 453554 <span style="color: orangered;"></span><br>
+                    Tamil Nadu 64767 <span style="color: yellow;"></span><br>
+                    Andhra Pradesh 45354 <span style="color: hotpink;"></span><br>
+                    Karnataka 63554 <span style="color: blue;"></span><br>
+                    Delhi 4554 <span style="color: green;"></span><br>
+                </p>
+                <h3>India Corona Virus Cases Till Now</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
